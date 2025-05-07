@@ -1,0 +1,62 @@
+# Node
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# TypeScript
+*.tsbuildinfo
+/dist
+/build
+
+# Next.js
+.next/
+out/
+.cache/
+*.log
+
+# Environment variables
+.env
+.env.*  # handles .env.dev, .env.local, etc.
+
+# Docker
+docker-compose.override.yml
+docker-compose*.log
+*.pid
+
+# OS-specific
+.DS_Store
+Thumbs.db
+
+# IDEs & editors
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Logs
+logs/
+*.log
+
+# PostgreSQL (if you had volume backups locally)
+pgdata/
+postgres-data/
+
+# Coverage and testing
+coverage/
+jest-coverage/
+*.lcov
+
+# Optional: ignore compiled Prisma files
+/prisma/migrations/
+.prisma/
+
+# Ignore build output from client/server if duplicated
+client/.next
+client/node_modules
+server/node_modules
+server/dist
+
+# Local database folder (if created during dev)
+db/
