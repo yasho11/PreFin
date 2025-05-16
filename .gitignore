@@ -1,9 +1,10 @@
-# Node.js dependencies
+# Ignore node_modules folders (root and inside app/)
 node_modules/
+app/node_modules/
 
-# Next.js build outputs
-.next/
-out/
+# Next.js build output
+app/.next/
+app/out/
 
 # Logs
 *.log
@@ -25,17 +26,10 @@ Thumbs.db
 # Docker files
 docker-compose.override.yml
 *.local.yml
-**/docker-compose.override.yml
-**/*.local.yml
 
-# Docker volumes / Postgres data folders (if local data volumes are used)
+# Docker volumes or Postgres data folders (if any)
 pgdata/
 postgres-data/
-
-# Sequelize generated files (optional: include or exclude if you want to track these)
-# migrations/
-# seeders/
-# models/
 
 # Editor directories and files
 .vscode/
@@ -43,7 +37,3 @@ postgres-data/
 
 # Coverage reports
 coverage/
-
-# Misc
-.pnpm-debug.log*
-yarn-error.log
