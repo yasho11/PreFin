@@ -1,10 +1,10 @@
 # Ignore node_modules folders (root and inside app/)
 node_modules/
-app/node_modules/
+container/node_modules/
 
 # Next.js build output
-app/.next/
-app/out/
+container/.next/
+container/out/
 
 # Logs
 *.log
