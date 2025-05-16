@@ -1,0 +1,31 @@
+version: "3.8"
+
+services:
+  web:
+    build:
+      context: ./app
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./app:/app # Mount your app directory for live updates
+      - /app/node_modules # Avoid conflict with local node_modules
+    environment:
+      - DATABASE_URL=postgresql://postgres:postgres@db:5432/prefin
+    depends_on:
+      - db
+    command: npm run dev # Make sure to run the development mode
+
+  db:
+    image: postgres:16
+    restart: always
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: prefin
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+
+volumes:
+  pgdata:

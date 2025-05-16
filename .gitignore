@@ -1,0 +1,49 @@
+# Node.js dependencies
+node_modules/
+
+# Next.js build outputs
+.next/
+out/
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+
+# Environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Docker files
+docker-compose.override.yml
+*.local.yml
+**/docker-compose.override.yml
+**/*.local.yml
+
+# Docker volumes / Postgres data folders (if local data volumes are used)
+pgdata/
+postgres-data/
+
+# Sequelize generated files (optional: include or exclude if you want to track these)
+# migrations/
+# seeders/
+# models/
+
+# Editor directories and files
+.vscode/
+.idea/
+
+# Coverage reports
+coverage/
+
+# Misc
+.pnpm-debug.log*
+yarn-error.log
